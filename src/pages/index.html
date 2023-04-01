@@ -14,25 +14,109 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="../styles//input.css" />
   </head>
-  <body class="bg-gray-500 h-screen w-full flex items-center justify-center">
-    <div class="bg-gray-700 w-56 min-h-min rounded-md p-4">
+  <body
+    class="bg-gray-950 h-screen w-full flex flex-col items-center justify-center"
+  >
+  <!-- Box 1 -->
+    <div id="box1" class="bg-slate-900 w-96 min-h-min rounded-3xl p-7">
       <div>
         <img
-          class="p-2 rounded-full bg-gray-600"
+          class="p-2 rounded-full bg-slate-800"
           src="../../images/icon-star.svg"
           alt="estrela"
         />
-        <div class="my-3">
-          <h1 class="text-white font-bold text-lg">How did we do?</h1>
-          <p></p>
+        <div class="mt-6 mb-6">
+          <h1 class="text-white font-bold text-lg mb-2">How did we do?</h1>
+          <p class="text-gray-300 text-left opacity-75">
+            Please let us know how he did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <p
+            id="errorMsg"
+            class="text-center text-red-500 font-bold mt-2 hidden"
+          >
+            Please select a score!
+          </p>
+        </div>
+        <div>
+          <div class="mb-5 flex items-center justify-around buttons">
+            <button
+              class="px-6 py-4 rounded-full bg-slate-800 text-gray-300 hover:bg-orange-500 font-bold transition-all ease duration-300 focus:bg-gray-500"
+            >
+              1
+            </button>
+            <button
+              class="px-6 py-4 rounded-full bg-slate-800 text-gray-300 hover:bg-orange-500 font-bold transition-all ease duration-300 focus:bg-gray-500"
+            >
+              2
+            </button>
+            <button
+              class="px-6 py-4 rounded-full bg-slate-800 text-gray-300 hover:bg-orange-500 font-bold transition-all ease duration-300 focus:bg-gray-500"
+            >
+              3
+            </button>
+            <button
+              class="px-6 py-4 rounded-full bg-slate-800 text-gray-300 hover:bg-orange-500 font-bold transition-all ease duration-300 focus:bg-gray-500"
+            >
+              4
+            </button>
+            <button
+              class="px-6 py-4 rounded-full bg-slate-800 text-gray-300 hover:bg-orange-500 font-bold transition-all ease duration-300 focus:bg-gray-500"
+            >
+              5
+            </button>
+          </div>
+          <div>
+            <button
+              type="submit"
+              id="submeter"
+              class="text-white text-center cursor-pointer w-full bg-orange-500 py-2 rounded-full hover:text-orange-500 hover:bg-white transition-all ease duration-400 font-bold"
+            >
+              SUBMIT
+            </button>
+          </div>
         </div>
       </div>
     </div>
-    <!-- <div class="text-2xl">
+    <!-- box 2 -->
+    <div
+      id="box2"
+      class="bg-slate-900 w-96 min-h-min rounded-3xl px-6 py-12 hidden"
+    >
+      <div>
+        <img
+          class="p-2 rounded-full mx-auto"
+          src="../../images/illustration-thank-you.svg"
+          alt="estrela"
+        />
+        <div class="mt-6 text-center">
+          <p
+            class="text-orange-500 font-semibold text-lg bg-gray-700 w-fit mx-auto px-4 py-1 rounded-full flex items-center justify-center"
+          >
+            Your select <span class="mx-1" id="numberSelected">4</span> out of 5
+          </p>
+        </div>
+        <div class="text-center mt-8">
+          <h1 class="text-white font-bold text-2xl">Thank you!</h1>
+          <p class="text-gray-300 text-base mt-3 opacity-75">
+            We appreciate you tanking the time to give a rating. if you ever
+            need more support, don't hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="text-white mt-4 text-center text-xs sm:text-sm">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a
+        class="opacity-75"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+      >. Coded by
+      <a class="opacity-75" href="https://portifolio-one-liard.vercel.app/"
+        >Diego Procopio</a
+      >.
+    </div>
+    <script src="../scripts/index.js"></script>
   </body>
 </html>
